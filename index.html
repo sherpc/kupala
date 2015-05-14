@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Kupala</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/handlebars-v3.0.0.js"></script>
+	<script type="text/javascript" src="js/lodash.min.js"></script>
+	<script type="text/javascript" src="js/velocity.min.js"></script>
+	<script type="text/javascript" src="js/knockout-3.3.0.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+  </head>
+  <body>
+  	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="sun" x="0px" y="0px" width="302px" height="331px" viewBox="0 0 302 331" enable-background="new 0 0 302 331" xml:space="preserve">
+<g>
+	<path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M120.444,232.026l-9.834-4.618l18.534-39.852   c-3.668-2.787-6.783-6.379-9.077-10.469l-28.949,12.917l-4.407-9.971l29.612-13.208c-0.672-3.493-0.791-7.041-0.354-10.571   l-42.34-10.694l2.646-10.58l42.705,10.789c1.39-2.938,3.225-5.676,5.468-8.157l-33.915-37.95l8.079-7.288l34.327,38.416   c3.269-1.85,6.776-3.13,10.449-3.813l-2.509-54.483l10.842-0.468l2.52,54.692c2.004,0.284,3.99,0.751,5.917,1.391   c2.103,0.697,4.19,1.642,6.215,2.813l29.918-35.042l8.239,7.099l-29.714,34.801c3.282,3.713,5.739,8.155,7.155,12.935l34.268-1.042   l0.327,10.898l-33.212,1.007c-0.112,3.249-0.677,6.439-1.682,9.497c-0.586,1.781-1.336,3.543-2.234,5.248l41.192,24.753   l-5.571,9.362l-42.249-25.382c-3.568,3.394-7.869,5.99-12.528,7.566l8.524,34.955l-10.546,2.597l-8.728-35.796   c-0.016,0-0.032,0-0.048,0c-3.646,0-7.204-0.568-10.575-1.689c-0.048-0.016-0.096-0.033-0.143-0.049L120.444,232.026z    M149.53,137.33c-9.92,0-18.678,6.361-21.793,15.831c-3.972,12.076,2.574,25.148,14.592,29.141   c2.341,0.777,4.767,1.171,7.208,1.171c9.921,0,18.68-6.363,21.795-15.834c1.924-5.848,1.466-12.099-1.291-17.604   c-2.756-5.504-7.481-9.599-13.303-11.533C154.397,137.724,151.971,137.33,149.53,137.33z"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="73.629" y="230" width="147" height="160"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_" overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_2_)">
+		<path fill="#F6A433" d="M120.311,232.053l-9.884-4.619l18.627-39.865c-3.687-2.787-6.817-6.381-9.123-10.473l-29.094,12.922    l-4.429-9.975l29.76-13.213c-0.675-3.494-0.795-7.043-0.356-10.574l-42.552-10.697l2.659-10.584l42.918,10.793    c1.397-2.939,3.241-5.678,5.496-8.16L90.25,99.645l8.119-7.29l34.499,38.429c3.285-1.851,6.81-3.131,10.501-3.814l-2.521-54.502    L151.744,72l2.532,54.711c2.015,0.284,4.011,0.751,5.946,1.392c2.114,0.697,4.212,1.643,6.246,2.813l30.068-35.054l8.28,7.102    l-29.863,34.813c3.299,3.715,5.768,8.158,7.191,12.939l34.439-1.043l0.328,10.902l-33.378,1.008c-0.112,3.25-0.681,6.441-1.69,9.5    c-0.589,1.781-1.343,3.545-2.246,5.25l41.398,24.762l-5.599,9.365l-42.46-25.391c-3.586,3.395-7.908,5.992-12.591,7.568    l8.567,34.967l-10.6,2.598l-8.771-35.809c-0.016,0-0.032,0-0.048,0c-3.664,0-7.24-0.568-10.628-1.689    c-0.049-0.016-0.097-0.033-0.144-0.049L120.311,232.053z M149.542,137.325c-9.97,0-18.771,6.363-21.903,15.836    c-3.992,12.08,2.587,25.156,14.666,29.15c2.353,0.777,4.791,1.172,7.244,1.172c9.971,0,18.773-6.365,21.904-15.84    c1.935-5.85,1.474-12.104-1.297-17.609s-7.519-9.603-13.37-11.537C154.433,137.719,151.995,137.325,149.542,137.325z"/>
+	</g>
+</g>
+</svg>
+  </body>
+</html>
+
